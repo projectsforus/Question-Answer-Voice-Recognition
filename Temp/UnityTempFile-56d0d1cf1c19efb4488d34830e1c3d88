@@ -1,0 +1,648 @@
+/target:library
+/nowarn:0169
+/out:Temp/Assembly-CSharp.dll
+/debug:portable
+/optimize-
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.GridModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.InputModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.TLSModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.TimelineModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UIModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UNETModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.VFXModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/UnityEditor.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\Managed/Unity.Locator.dll"
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
+/reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+/reference:"C:/Program Files/Unity2018_3/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+/reference:"C:/Program Files/Unity2018_3/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
+/reference:"C:/Program Files/Unity2018_3/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+/reference:"C:/Program Files/Unity2018_3/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
+/reference:"C:/Program Files/Unity2018_3/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
+/reference:Assets/Watson/Plugins/websocket-sharp.dll
+/reference:"E:/Unity Projects/IBM Watson 2018_3/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll"
+/reference:"E:/Unity Projects/IBM Watson 2018_3/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll"
+/reference:"E:/Unity Projects/IBM Watson 2018_3/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll"
+/reference:"E:/Unity Projects/IBM Watson 2018_3/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll"
+/reference:"E:/Unity Projects/IBM Watson 2018_3/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Runtime.Serialization.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.Linq.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.Vectors.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Net.Http.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Microsoft.CSharp.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\netstandard.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.AppContext.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Concurrent.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.NonGeneric.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Specialized.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Annotations.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.EventBasedAsync.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Primitives.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.TypeConverter.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Console.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Data.Common.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Contracts.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Debug.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.FileVersionInfo.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Process.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.StackTrace.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Tools.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TraceSource.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Drawing.Primitives.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Dynamic.Runtime.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Calendars.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Extensions.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Compression.ZipFile.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.DriveInfo.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Primitives.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Watcher.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.IsolatedStorage.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.MemoryMappedFiles.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Pipes.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.UnmanagedMemoryStream.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Expressions.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Parallel.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Queryable.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Http.Rtc.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NameResolution.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NetworkInformation.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Ping.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Primitives.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Requests.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Security.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Sockets.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebHeaderCollection.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.Client.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ObjectModel.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.ILGeneration.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.Lightweight.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Extensions.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Primitives.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Reader.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.ResourceManager.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Writer.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.CompilerServices.VisualC.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Extensions.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Handles.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Numerics.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Formatters.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Json.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Primitives.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Xml.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Claims.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Algorithms.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Csp.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Encoding.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Primitives.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.X509Certificates.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Principal.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.SecureString.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Duplex.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Http.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.NetTcp.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Primitives.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Security.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.Extensions.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.RegularExpressions.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Overlapped.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.Parallel.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Thread.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.ThreadPool.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Timer.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ValueTuple.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.ReaderWriter.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XDocument.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlDocument.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlSerializer.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\UnityScript.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\UnityScript.Lang.dll"
+/reference:"C:\Program Files\Unity2018_3\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\Boo.Lang.dll"
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_3_0
+/define:UNITY_2018_3
+/define:UNITY_2018
+/define:PLATFORM_ARCH_64
+/define:UNITY_64
+/define:UNITY_INCLUDE_TESTS
+/define:UNITY_ANALYTICS
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_DUCK_TYPING
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_SPRITES
+/define:ENABLE_GRID
+/define:ENABLE_TILEMAP
+/define:ENABLE_TERRAIN
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_DIRECTOR
+/define:ENABLE_UNET
+/define:ENABLE_LZMA
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_WEBCAM
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_HUB
+/define:ENABLE_CLOUD_PROJECT_ID
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_TIMELINE
+/define:ENABLE_EDITOR_METRICS
+/define:ENABLE_EDITOR_METRICS_CACHING
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:INCLUDE_DYNAMIC_GI
+/define:INCLUDE_GI
+/define:ENABLE_MONO_BDWGC
+/define:PLATFORM_SUPPORTS_MONO
+/define:RENDER_SOFTWARE_CURSOR
+/define:INCLUDE_PUBNUB
+/define:ENABLE_VIDEO
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_LOCALIZATION
+/define:PLATFORM_STANDALONE_WIN
+/define:PLATFORM_STANDALONE
+/define:UNITY_STANDALONE_WIN
+/define:UNITY_STANDALONE
+/define:ENABLE_SUBSTANCE
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_MOVIES
+/define:ENABLE_NETWORK
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_CLUSTER_SYNC
+/define:ENABLE_CLUSTERINPUT
+/define:ENABLE_VR
+/define:ENABLE_AR
+/define:ENABLE_WEBSOCKET_HOST
+/define:ENABLE_MONO
+/define:NET_4_6
+/define:ENABLE_PROFILER
+/define:DEBUG
+/define:TRACE
+/define:UNITY_ASSERTIONS
+/define:UNITY_EDITOR
+/define:UNITY_EDITOR_64
+/define:UNITY_EDITOR_WIN
+/define:ENABLE_UNITY_COLLECTIONS_CHECKS
+/define:ENABLE_BURST_AOT
+/define:UNITY_TEAM_LICENSE
+/define:ENABLE_VSTU
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+Assets\TextTyper.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleAssistantV1.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleAssistantV2.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleCallback.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleCompareComplyV1.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleConversation.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleCustomHeaders.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleDiscovery.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleLanguageTranslatorV3.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleNaturalLanguageClassifier.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleNaturalLanguageUnderstanding.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExamplePersonalityInsights.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleSpeechToText.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleStreaming.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleStreamingSplitSamples.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleTextToSpeech.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleToneAnalyzer.cs
+Assets\Watson\Examples\ServiceExamples\Scripts\ExampleVisualRecognition.cs
+Assets\Watson\Scripts\Connection\RESTConnector.cs
+Assets\Watson\Scripts\Connection\WSConnector.cs
+Assets\Watson\Scripts\Debug\DebugReactor.cs
+Assets\Watson\Scripts\Logging\FileReactor.cs
+Assets\Watson\Scripts\Logging\ILogReactor.cs
+Assets\Watson\Scripts\Logging\Logger.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Assistant.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\CaptureGroup.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\Context.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\Counterexample.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\CounterexampleCollection.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\CreateCounterexample.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\CreateDialogNode.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\CreateEntity.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\CreateExample.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\CreateIntent.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\CreateSynonym.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\CreateValue.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\CreateWorkspace.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogNode.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogNodeAction.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogNodeCollection.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogNodeNextStep.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogNodeOutput.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogNodeOutputGeneric.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogNodeOutputModifiers.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogNodeOutputOptionsElement.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogNodeOutputOptionsElementValue.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogNodeOutputTextValuesElement.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogNodeVisitedDetails.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogRuntimeResponseGeneric.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogRuntimeResponseTypeOption.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogRuntimeResponseTypeSuggestion.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogSuggestion.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\DialogSuggestionValue.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\Entity.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\EntityCollection.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\EntityExport.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\EntityMention.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\EntityMentionCollection.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\Example.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\ExampleCollection.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\InputData.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\Intent.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\IntentCollection.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\IntentExport.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\LogCollection.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\LogExport.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\LogMessage.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\LogPagination.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\Mentions.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\MessageInput.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\MessageRequest.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\MessageResponse.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\OutputData.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\Pagination.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\RuntimeEntity.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\RuntimeIntent.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\Synonym.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\SynonymCollection.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\SystemResponse.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\UpdateCounterexample.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\UpdateDialogNode.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\UpdateEntity.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\UpdateExample.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\UpdateIntent.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\UpdateSynonym.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\UpdateValue.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\UpdateWorkspace.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\Value.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\ValueCollection.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\ValueExport.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\Workspace.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\WorkspaceCollection.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\WorkspaceExport.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\WorkspaceSystemSettings.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\WorkspaceSystemSettingsDisambiguation.cs
+Assets\Watson\Scripts\Services\Assistant\v1\Models\WorkspaceSystemSettingsTooling.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Assistant.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\CaptureGroup.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\DialogLogMessage.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\DialogNodeAction.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\DialogNodeOutputOptionsElement.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\DialogNodeOutputOptionsElementValue.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\DialogNodesVisited.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\DialogRuntimeResponseGeneric.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\DialogSuggestion.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\DialogSuggestionValue.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\MessageContext.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\MessageContextGlobal.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\MessageContextGlobalSystem.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\MessageContextSkills.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\MessageInput.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\MessageInputOptions.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\MessageOutput.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\MessageOutputDebug.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\MessageRequest.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\MessageResponse.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\RuntimeEntity.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\RuntimeIntent.cs
+Assets\Watson\Scripts\Services\Assistant\v2\Models\SessionResponse.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\CompareComply.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Address.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\AlignedElement.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Attribute.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Batches.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\BatchStatus.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\BodyCells.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Category.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\ClassifyReturn.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\ColumnHeaderIds.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\ColumnHeaders.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\ColumnHeaderTexts.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\ColumnHeaderTextsNormalized.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\CompareReturn.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Contact.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\ContractAmts.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\DocCounts.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\DocInfo.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\DocStructure.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Document.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\EffectiveDates.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Element.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\ElementLocations.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\ElementPair.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\FeedbackDataInput.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\FeedbackDataOutput.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\FeedbackDeleted.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\FeedbackInput.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\FeedbackList.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\FeedbackReturn.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\GetFeedback.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\HTMLReturn.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Label.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\LeadingSentence.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Location.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\OriginalLabelsIn.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\OriginalLabelsOut.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Pagination.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Parties.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\RowHeaderIds.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\RowHeaders.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\RowHeaderTexts.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\RowHeaderTextsNormalized.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\SectionTitle.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\SectionTitles.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\ShortDoc.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\TableHeaders.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\TableReturn.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\Tables.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\TerminationDates.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\TypeLabel.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\UnalignedElement.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\UpdatedLabelsIn.cs
+Assets\Watson\Scripts\Services\CompareComply\v1\Models\UpdatedLabelsOut.cs
+Assets\Watson\Scripts\Services\Conversation\v1\Conversation.cs
+Assets\Watson\Scripts\Services\Conversation\v1\DataModels.cs
+Assets\Watson\Scripts\Services\Discovery\v1\DataModels.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Discovery.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\CreateEventObject.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\CreateEventResponse.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\EventData.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\Expansion.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\Expansions.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\LogQueryResponse.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\LogQueryResponseResult.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\LogQueryResponseResultDocuments.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\LogQueryResponseResultDocumentsResult.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\MetricAggregation.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\MetricAggregationResult.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\MetricResponse.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\MetricTokenAggregation.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\MetricTokenAggregationResult.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\MetricTokenResponse.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\NluEnrichmentCategories.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\NluEnrichmentConcepts.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\NluEnrichmentEmotion.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\NluEnrichmentEntities.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\NluEnrichmentFeatures.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\NluEnrichmentKeywords.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\NluEnrichmentRelations.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\NluEnrichmentSemanticRoles.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\NluEnrichmentSentiment.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryEntities.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryEntitiesContext.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryEntitiesEntity.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryEntitiesResponse.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryEntitiesResponseItem.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryEvidence.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryEvidenceEntity.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryFilterType.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryLarge.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryNoticesResponse.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryNoticesResult.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryPassages.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryRelations.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryRelationsArgument.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryRelationsEntity.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryRelationsFilter.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryRelationsRelationship.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryRelationsResponse.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\QueryResultMetadata.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\RetrievalDetails.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\SearchStatus.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\TokenDict.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\TokenDictRule.cs
+Assets\Watson\Scripts\Services\Discovery\v1\Models\TokenDictStatusResponse.cs
+Assets\Watson\Scripts\Services\IWatsonService.cs
+Assets\Watson\Scripts\Services\LanguageTranslator\v3\DataModels.cs
+Assets\Watson\Scripts\Services\LanguageTranslator\v3\LanguageTranslator.cs
+Assets\Watson\Scripts\Services\NaturalLanguageClassifier\v2\DataModels.cs
+Assets\Watson\Scripts\Services\NaturalLanguageClassifier\v2\NaturalLanguageClassifier.cs
+Assets\Watson\Scripts\Services\NaturalLanguageUnderstanding\v1\DataModels.cs
+Assets\Watson\Scripts\Services\NaturalLanguageUnderstanding\v1\NaturalLanguageUnderstanding.cs
+Assets\Watson\Scripts\Services\PersonalityInsights\v3\DataModels.cs
+Assets\Watson\Scripts\Services\PersonalityInsights\v3\PersonalityInsights.cs
+Assets\Watson\Scripts\Services\SpeechToText\v1\DataModels.cs
+Assets\Watson\Scripts\Services\SpeechToText\v1\SpeechToText.cs
+Assets\Watson\Scripts\Services\TextToSpeech\v1\DataModels.cs
+Assets\Watson\Scripts\Services\TextToSpeech\v1\TextToSpeech.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\Model\DocumentAnalysis.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\Model\SentenceAnalysis.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneAnalysis.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneCategory.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneChatInput.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneChatScore.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneInput.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneScore.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\Model\Utterance.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\Model\UtteranceAnalyses.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\Model\UtteranceAnalysis.cs
+Assets\Watson\Scripts\Services\ToneAnalyzer\v3\ToneAnalyzer.cs
+Assets\Watson\Scripts\Services\VisualRecognition\v3\DataModels.cs
+Assets\Watson\Scripts\Services\VisualRecognition\v3\VisualRecognition.cs
+Assets\Watson\Scripts\UnitTests\TestAssistantV1.cs
+Assets\Watson\Scripts\UnitTests\TestAssistantV2.cs
+Assets\Watson\Scripts\UnitTests\TestCompareComplyV1.cs
+Assets\Watson\Scripts\UnitTests\TestDiscovery.cs
+Assets\Watson\Scripts\UnitTests\TestEventManager.cs
+Assets\Watson\Scripts\UnitTests\TestLanguageTranslatorV3.cs
+Assets\Watson\Scripts\UnitTests\TestLanguageTranslatorV3ApikeyAsBasicauth.cs
+Assets\Watson\Scripts\UnitTests\TestNaturalLanguageClassifier.cs
+Assets\Watson\Scripts\UnitTests\TestNaturalLanguageUnderstanding.cs
+Assets\Watson\Scripts\UnitTests\TestPersonalityInsights.cs
+Assets\Watson\Scripts\UnitTests\TestRunnable.cs
+Assets\Watson\Scripts\UnitTests\TestSpeechToText.cs
+Assets\Watson\Scripts\UnitTests\TestTextToSpeech.cs
+Assets\Watson\Scripts\UnitTests\TestToneAnalyzer.cs
+Assets\Watson\Scripts\UnitTests\TestVisualRecognition.cs
+Assets\Watson\Scripts\UnitTests\UnitTest.cs
+Assets\Watson\Scripts\UnitTests\UnitTestManager.cs
+Assets\Watson\Scripts\Utilities\AudioClipUtil.cs
+Assets\Watson\Scripts\Utilities\Constants.cs
+Assets\Watson\Scripts\Utilities\Credentials.cs
+Assets\Watson\Scripts\Utilities\EventManager.cs
+Assets\Watson\Scripts\Utilities\FrameRateCounter.cs
+Assets\Watson\Scripts\Utilities\KeyEventManager.cs
+Assets\Watson\Scripts\Utilities\NestedPrefabs.cs
+Assets\Watson\Scripts\Utilities\Runnable.cs
+Assets\Watson\Scripts\Utilities\SerializedDelegate.cs
+Assets\Watson\Scripts\Utilities\Singleton.cs
+Assets\Watson\Scripts\Utilities\TimedDestroy.cs
+Assets\Watson\Scripts\Utilities\UnityObjectUtil.cs
+Assets\Watson\Scripts\Utilities\Utility.cs
+Assets\Watson\Scripts\Utilities\WatsonException.cs
+Assets\Watson\Scripts\Utilities\WaveFile.cs
+Assets\Watson\Scripts\Widgets\DataTypes.cs
+Assets\Watson\Scripts\Widgets\Widget.cs
+Assets\Watson\ThirdParty\FullSerializer\Aot\fsAotCompilationManager.cs
+Assets\Watson\ThirdParty\FullSerializer\Aot\fsAotConfiguration.cs
+Assets\Watson\ThirdParty\FullSerializer\Aot\fsAotVersionInfo.cs
+Assets\Watson\ThirdParty\FullSerializer\Aot\fsIAotConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsArrayConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsDateConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsDictionaryConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsEnumConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsForwardConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsGuidConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsIEnumerableConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsKeyValuePairConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsNullableConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsPrimitiveConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsReflectedConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsTypeConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\fsWeakReferenceConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\Unity\AnimationCurve_DirectConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\Unity\Bounds_DirectConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\Unity\Gradient_DirectConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\Unity\GUIStyle_DirectConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\Unity\GUIStyleState_DirectConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\Unity\Keyframe_DirectConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\Unity\LayerMask_DirectConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\Unity\Rect_DirectConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\Unity\RectOffset_DirectConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\Converters\Unity\UnityEvent_Converter.cs
+Assets\Watson\ThirdParty\FullSerializer\fsBaseConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\fsConfig.cs
+Assets\Watson\ThirdParty\FullSerializer\fsContext.cs
+Assets\Watson\ThirdParty\FullSerializer\fsConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\fsConverterRegistrar.cs
+Assets\Watson\ThirdParty\FullSerializer\fsData.cs
+Assets\Watson\ThirdParty\FullSerializer\fsDirectConverter.cs
+Assets\Watson\ThirdParty\FullSerializer\fsExceptions.cs
+Assets\Watson\ThirdParty\FullSerializer\fsIgnoreAttribute.cs
+Assets\Watson\ThirdParty\FullSerializer\fsISerializationCallbacks.cs
+Assets\Watson\ThirdParty\FullSerializer\fsJsonParser.cs
+Assets\Watson\ThirdParty\FullSerializer\fsJsonPrinter.cs
+Assets\Watson\ThirdParty\FullSerializer\fsMemberSerialization.cs
+Assets\Watson\ThirdParty\FullSerializer\fsObjectAttribute.cs
+Assets\Watson\ThirdParty\FullSerializer\fsObjectProcessor.cs
+Assets\Watson\ThirdParty\FullSerializer\fsPropertyAttribute.cs
+Assets\Watson\ThirdParty\FullSerializer\fsResult.cs
+Assets\Watson\ThirdParty\FullSerializer\fsSerializer.cs
+Assets\Watson\ThirdParty\FullSerializer\Internal\fsCyclicReferenceManager.cs
+Assets\Watson\ThirdParty\FullSerializer\Internal\fsOption.cs
+Assets\Watson\ThirdParty\FullSerializer\Internal\fsPortableReflection.cs
+Assets\Watson\ThirdParty\FullSerializer\Internal\fsTypeExtensions.cs
+Assets\Watson\ThirdParty\FullSerializer\Internal\fsVersionedType.cs
+Assets\Watson\ThirdParty\FullSerializer\Internal\fsVersionManager.cs
+Assets\Watson\ThirdParty\FullSerializer\Reflection\fsMetaProperty.cs
+Assets\Watson\ThirdParty\FullSerializer\Reflection\fsMetaType.cs
+Assets\Watson\ThirdParty\FullSerializer\Reflection\fsReflectionUtility.cs
+Assets\Watson\ThirdParty\FullSerializer\Reflection\fsTypeCache.cs
+Assets\Watson\ThirdParty\MiniJSON\MiniJSON.cs
+Assets\Watson\Travis\TravisIntegrationTests.cs

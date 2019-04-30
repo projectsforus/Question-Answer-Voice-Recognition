@@ -1,0 +1,630 @@
+--
+    // Constructors
+    //-------------
+
+    Color4 ();			    	// no initialization
+    explicit Color4 (T a);		// (a a a a)
+    Color4 (T a, T b, T c, T d);	// (a b c d)
+
+
+    //---------------------------------
+    // Copy constructors and assignment
+    //---------------------------------
+
+    Color4 (const Color4 &v);
+    template <class S> Color4 (const Color4<S> &v);
+
+    const Color4 &	operator = (const Color4 &v);
+
+
+    //----------------------
+    // Compatibility with Sb
+    //----------------------
+
+    template <class S>
+    void		setValue (S a, S b, S c, S d);
+
+    template <class S>
+    void		setValue (const Color4<S> &v);
+
+    template <class S>
+    void		getValue (S &a, S &b, S &c, S &d) const;
+
+    template <class S>
+    void		getValue (Color4<S> &v) const;
+
+    T *			getValue();
+    const T *		getValue() const;
+
+
+    //---------
+    // Equality
+    //---------
+
+    template <class S>
+    bool		operator == (const Color4<S> &v) const;
+
+    template <class S>
+    bool		operator != (const Color4<S> &v) const;
+
+
+    //------------------------
+    // Component-wise addition
+    //------------------------
+
+    const Color4 &	operator += (const Color4 &v);
+    Color4		operator + (const Color4 &v) const;
+
+
+    //---------------------------
+    // Component-wise subtraction
+    //---------------------------
+
+    const Color4 &	operator -= (const Color4 &v);
+    Color4		operator - (const Color4 &v) const;
+
+
+    //------------------------------------
+    // Component-wise multiplication by -1
+    //------------------------------------
+
+    Color4		operator - () const;
+    const Color4 &	negate ();
+
+
+    //------------------------------
+    // Component-wise multiplication
+    //------------------------------
+
+    const Color4 &	operator *= (const Color4 &v);
+    const Color4 &	operator *= (T a);
+    Color4		operator * (const Color4 &v) const;
+    Color4		operator * (T a) const;
+
+
+    //------------------------
+    // Component-wise division
+    //------------------------
+
+    const Color4 &	operator /= (const Color4 &v);
+    const Color4 &	operator /= (T a);
+    Color4		operator / (const Color4 &v) const;
+    Color4		operator / (T a) const;
+
+
+    //----------------------------------------------------------
+    // Number of dimensions, i.e. number of elements in a Color4
+    //----------------------------------------------------------
+
+    static unsigned int	dimensions() {return 4;}
+
+
+    //-------------------------------------------------
+    // Limitations of type T (see also class limits<T>)
+    //-------------------------------------------------
+
+    static T		baseTypeMin()		{return limits<T>::min();}
+    static T		baseTypeMax()		{return limits<T>::max();}
+    static T		baseTypeSmallest()	{return limits<T>::smallest();}
+    static T		baseTypeEpsilon()	{return limits<T>::epsilon();}
+
+
+    //--------------------------------------------------------------
+    // Base type -- in templates, which accept a parameter, V, which
+    // could be a Color4<T>, you can refer to T as
+    // V::BaseType
+    //--------------------------------------------------------------
+
+    typedef T		BaseType;
+};
+
+//--------------
+// Stream output
+//--------------
+
+template <class T>
+std::ostream &	operator << (std::ostream &s, const Color4<T> &v);
+
+//----------------------------------------------------
+// Reverse multiplication: S * Color4<T>
+//----------------------------------------------------
+
+template <class S, class T> Color4<T>	operator * (S a, const Color4<T> &v);
+
+//-------------------------
+// Typedefs for convenience
+//-------------------------
+
+typedef Color3<float>		Color3f;
+typedef Color3<half>		Color3h;
+typedef Color3<unsigned char>	Color3c;
+typedef Color3<half>		C3h;
+typedef Color3<float>		C3f;
+typedef Color3<unsigned char>	C3c;
+typedef Color4<float>		Color4f;
+typedef Color4<half>		Color4h;
+typedef Color4<unsigned char>	Color4c;
+typedef Color4<float>		C4f;
+typedef Color4<half>		C4h;
+typedef Color4<unsigned char>	C4c;
+typedef unsigned int		PackedColor;
+
+
+//-------------------------
+// Implementation of Color3
+//-------------------------
+
+template <class T>
+inline
+Color3<T>::Color3 (): Vec3 <T> ()
+{
+    // empty
+}
+
+template <class T>
+inline
+Color3<T>::Color3 (T a): Vec3 <T> (a)
+{
+    // empty
+}
+
+template <class T>
+inline
+Color3<T>::Color3 (T a, T b, T c): Vec3 <T> (a, b, c)
+{
+    // empty
+}
+
+template <class T>
+inline
+Color3<T>::Color3 (const Color3 &c): Vec3 <T> (c)
+{
+    // empty
+}
+
+template <class T>
+template <class S>
+inline
+Color3<T>::Color3 (const Vec3<S> &v): Vec3 <T> (v)
+{
+    //empty
+}
+
+template <class T>
+inline const Color3<T> &
+Color3<T>::operator = (const Color3 &c)
+{
+    *((Vec3<T> *) this) = c;
+    return *this;
+}
+
+template <class T>
+inline const Color3<T> &
+Color3<T>::operator += (const Color3 &c)
+{
+    *((Vec3<T> *) this) += c;
+    return *this;
+}
+
+template <class T>
+inline Color3<T>
+Color3<T>::operator + (const Color3 &c) const
+{
+    return Color3 (*(Vec3<T> *)this + (const Vec3<T> &)c);
+}
+
+template <class T>
+inline const Color3<T> &
+Color3<T>::operator -= (const Color3 &c)
+{
+    *((Vec3<T> *) this) -= c;
+    return *this;
+}
+
+template <class T>
+inline Color3<T>
+Color3<T>::operator - (const Color3 &c) const
+{
+    return Color3 (*(Vec3<T> *)this - (const Vec3<T> &)c);
+}
+
+template <class T>
+inline Color3<T>
+Color3<T>::operator - () const
+{
+    return Color3 (-(*(Vec3<T> *)this));
+}
+
+template <class T>
+inline const Color3<T> &
+Color3<T>::negate ()
+{
+    ((Vec3<T> *) this)->negate();
+    return *this;
+}
+
+template <class T>
+inline const Color3<T> &
+Color3<T>::operator *= (const Color3 &c)
+{
+    *((Vec3<T> *) this) *= c;
+    return *this;
+}
+
+template <class T>
+inline const Color3<T> &
+Color3<T>::operator *= (T a)
+{
+    *((Vec3<T> *) this) *= a;
+    return *this;
+}
+
+template <class T>
+inline Color3<T>
+Color3<T>::operator * (const Color3 &c) const
+{
+    return Color3 (*(Vec3<T> *)this * (const Vec3<T> &)c);
+}
+
+template <class T>
+inline Color3<T>
+Color3<T>::operator * (T a) const
+{
+    return Color3 (*(Vec3<T> *)this * a);
+}
+
+template <class T>
+inline const Color3<T> &
+Color3<T>::operator /= (const Color3 &c)
+{
+    *((Vec3<T> *) this) /= c;
+    return *this;
+}
+
+template <class T>
+inline const Color3<T> &
+Color3<T>::operator /= (T a)
+{
+    *((Vec3<T> *) this) /= a;
+    return *this;
+}
+
+template <class T>
+inline Color3<T>
+Color3<T>::operator / (const Color3 &c) const
+{
+    return Color3 (*(Vec3<T> *)this / (const Vec3<T> &)c);
+}
+
+template <class T>
+inline Color3<T>
+Color3<T>::operator / (T a) const
+{
+    return Color3 (*(Vec3<T> *)this / a);
+}
+
+//-----------------------
+// Implementation of Color4
+//-----------------------
+
+template <class T>
+inline T &
+Color4<T>::operator [] (int i)
+{
+    return (&r)[i];
+}
+
+template <class T>
+inline const T &
+Color4<T>::operator [] (int i) const
+{
+    return (&r)[i];
+}
+
+template <class T>
+inline
+Color4<T>::Color4 ()
+{
+    // empty
+}
+
+template <class T>
+inline
+Color4<T>::Color4 (T x)
+{
+    r = g = b = a = x;
+}
+
+template <class T>
+inline
+Color4<T>::Color4 (T x, T y, T z, T w)
+{
+    r = x;
+    g = y;
+    b = z;
+    a = w;
+}
+
+template <class T>
+inline
+Color4<T>::Color4 (const Color4 &v)
+{
+    r = v.r;
+    g = v.g;
+    b = v.b;
+    a = v.a;
+}
+
+template <class T>
+template <class S>
+inline
+Color4<T>::Color4 (const Color4<S> &v)
+{
+    r = T (v.r);
+    g = T (v.g);
+    b = T (v.b);
+    a = T (v.a);
+}
+
+template <class T>
+inline const Color4<T> &
+Color4<T>::operator = (const Color4 &v)
+{
+    r = v.r;
+    g = v.g;
+    b = v.b;
+    a = v.a;
+    return *this;
+}
+
+template <class T>
+template <class S>
+inline void
+Color4<T>::setValue (S x, S y, S z, S w)
+{
+    r = T (x);
+    g = T (y);
+    b = T (z);
+    a = T (w);
+}
+
+template <class T>
+template <class S>
+inline void
+Color4<T>::setValue (const Color4<S> &v)
+{
+    r = T (v.r);
+    g = T (v.g);
+    b = T (v.b);
+    a = T (v.a);
+}
+
+template <class T>
+template <class S>
+inline void
+Color4<T>::getValue (S &x, S &y, S &z, S &w) const
+{
+    x = S (r);
+    y = S (g);
+    z = S (b);
+    w = S (a);
+}
+
+template <class T>
+template <class S>
+inline void
+Color4<T>::getValue (Color4<S> &v) const
+{
+    v.r = S (r);
+    v.g = S (g);
+    v.b = S (b);
+    v.a = S (a);
+}
+
+template <class T>
+inline T *
+Color4<T>::getValue()
+{
+    return (T *) &r;
+}
+
+template <class T>
+inline const T *
+Color4<T>::getValue() const
+{
+    return (const T *) &r;
+}
+
+template <class T>
+template <class S>
+inline bool
+Color4<T>::operator == (const Color4<S> &v) const
+{
+    return r == v.r && g == v.g && b == v.b && a == v.a;
+}
+
+template <class T>
+template <class S>
+inline bool
+Color4<T>::operator != (const Color4<S> &v) const
+{
+    return r != v.r || g != v.g || b != v.b || a != v.a;
+}
+
+template <class T>
+inline const Color4<T> &
+Color4<T>::operator += (const Color4 &v)
+{
+    r += v.r;
+    g += v.g;
+    b += v.b;
+    a += v.a;
+    return *this;
+}
+
+template <class T>
+inline Color4<T>
+Color4<T>::operator + (const Color4 &v) const
+{
+    return Color4 (r + v.r, g + v.g, b + v.b, a + v.a);
+}
+
+template <class T>
+inline const Color4<T> &
+Color4<T>::operator -= (const Color4 &v)
+{
+    r -= v.r;
+    g -= v.g;
+    b -= v.b;
+    a -= v.a;
+    return *this;
+}
+
+template <class T>
+inline Color4<T>
+Color4<T>::operator - (const Color4 &v) const
+{
+    return Color4 (r - v.r, g - v.g, b - v.b, a - v.a);
+}
+
+template <class T>
+inline Color4<T>
+Color4<T>::operator - () const
+{
+    return Color4 (-r, -g, -b, -a);
+}
+
+template <class T>
+inline const Color4<T> &
+Color4<T>::negate ()
+{
+    r = -r;
+    g = -g;
+    b = -b;
+    a = -a;
+    return *this;
+}
+
+template <class T>
+inline const Color4<T> &
+Color4<T>::operator *= (const Color4 &v)
+{
+    r *= v.r;
+    g *= v.g;
+    b *= v.b;
+    a *= v.a;
+    return *this;
+}
+
+template <class T>
+inline const Color4<T> &
+Color4<T>::operator *= (T x)
+{
+    r *= x;
+    g *= x;
+    b *= x;
+    a *= x;
+    return *this;
+}
+
+template <class T>
+inline Color4<T>
+Color4<T>::operator * (const Color4 &v) const
+{
+    return Color4 (r * v.r, g * v.g, b * v.b, a * v.a);
+}
+
+template <class T>
+inline Color4<T>
+Color4<T>::operator * (T x) const
+{
+    return Color4 (r * x, g * x, b * x, a * x);
+}
+
+template <class T>
+inline const Color4<T> &
+Color4<T>::operator /= (const Color4 &v)
+{
+    r /= v.r;
+    g /= v.g;
+    b /= v.b;
+    a /= v.a;
+    return *this;
+}
+
+template <class T>
+inline const Color4<T> &
+Color4<T>::operator /= (T x)
+{
+    r /= x;
+    g /= x;
+    b /= x;
+    a /= x;
+    return *this;
+}
+
+template <class T>
+inline Color4<T>
+Color4<T>::operator / (const Color4 &v) const
+{
+    return Color4 (r / v.r, g / v.g, b / v.b, a / v.a);
+}
+
+template <class T>
+inline Color4<T>
+Color4<T>::operator / (T x) const
+{
+    return Color4 (r / x, g / x, b / x, a / x);
+}
+
+
+template <class T>
+std::ostream &
+operator << (std::ostream &s, const Color4<T> &v)
+{
+    return s << '(' << v.r << ' ' << v.g << ' ' << v.b << ' ' << v.a << ')';
+}
+
+//-----------------------------------------
+// Implementation of reverse multiplication
+//-----------------------------------------
+
+template <class S, class T>
+inline Color4<T>
+operator * (S x, const Color4<T> &v)
+{
+    return Color4<T> (x * v.r, x * v.g, x * v.b, x * v.a);
+}
+
+} // namespace Imath
+
+#endif
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ‰PNG
+
+   IHDR   €   €   L\öœ    IDATxíésVG’îõJB$@b7‹ûbƒ·nï½¹íîùÒÑşgâÆ|˜wÆ½DOŒwÚğwX$±K€öû{2«êÔ9z_mğD¸,Ÿ“U•••õdUÖrÎ{¨½şúëM?…‡‡@óÃ«ú§š…ÀOxÈıà'üd€‡ŒÀC®¾õ!×¿êÏ÷÷OŒONšôŸ÷æéZ­ÖÚºl||¬ÖT[±bEKkë†ë"øaòşxpçÎ•+W6×j@İÖÖÖÒÜüøáÃ`=99yçö[·n]½rµï\ßÊ•;wí\»níªU«–-k›ššœ˜˜ Ñ‰‰É©©)hŠ jzzêaÂÜ¸î—ZÕy7¬Y³4—/_ŞŞŞ|ôå
+ú7oŞ¼víÚĞå¡[7oİºqkrbrGÏø	+±r0Àääƒ3LMMc	n##Ã·nİt5ÆäæÔ~û€îîîõë×oÙ²‚ÖãctÃn
+ ›››AüÌ™3CCC7oÜ<{úìÅ‹ÂuJ¨Ö\Ãµ´´¬ß¸¾kmWWw×Úµk×­[‡!]f˜˜‡qrRã`llüöí‘»wïŒÜz `×«ìa€ÎÎÎíÛ·ïÙ³Ç{:(£¡<¼ùzÇÔÔààà—ºººèïú.LŒËÉ4×š'›ğ0À¯ËÄäÄÀ…†E{{[Çª»c£Ø KìŞ½{óæÍŒ	¤1–°Z{û²eËÖtv®ÂL7n\»{÷ÎØØ˜Wúà¯gĞÓ÷ïß¿mÛ6º­\LŞ~C~šêÔ©/¾øâ›o¾Á6›7m>sò>‡y7NÁM8üi€Y²Ô¼lcë²É¹3zë>òÈ#˜Æ’mlÉDïÜ¹=<|‹iüÁàA ºüO<ÑÑÑ‘ ^æåı
+@øèsçÎ=zày@mËæ-Ç¿>N?ÍÑgf˜šljjI¨¹¢Ì¸8{z=OŸ>}º¿¿:tˆ‘dŸb‚§æ––ff{ì4>>Á”26¦Éæ…g€î®®'|oàĞÓmsÜ½Á —ÿûßÿN¯¿zõêğğ0£¤½µı›cßĞU‡GÀ$ğE•Ã.Œ
+Òk zãÆ¶¶öU«Fî`KL800°cÇ0cSÆ%˜=š1ØêÕ]££wlÕô ĞÙÑqøÈ‘ wÜ­Áº$Ø€¸?±pıúuÀß·oßÄèÄÉã'ÅfÀ:°§ e&«ä¬šœGï2g¬^³z|jœ*˜{O<ÉÃ´L?Æaèƒz…––V&şÜ¡y¥÷éÚrğàÁû$ÚÅÒ×~ù«_±ÈaâsĞHÉôn\ÄŸşô§¯¾ú
+è1 ~yïŞ½ãwÆ{Oöêö’9j5-ó®µ¥Ú S°ÂÔ4fXÖºŒ®À¬ÀB–‚ãìÙ³Tİİ½–Ñ¨‰%&ŒZZ–¡Æı
+UÕ£ÖKpgEøğa&À„{B<I'….ùÙgŸ½ÿşû úlšÈİ¿oÿá;§O†ı=•©Kˆ)“ç îÈğĞ³6½}÷6¾ˆF÷?qâÄ¥K—üñÕ«Wƒ»›Àõd¸®X±Î‰‰±ûg†û56nÜøê«¯2İáX1@²}?7ÿë_ÿúÑG;ècrcôöè©“§ŠENıº	§¡õËQ:kâL„ŠDæDÓßÇFÇV¯ZM \øçÏŸc÷‡qÈ³Ğ‡*Ì !ÅÓ—êz_FÀ¯ıë­[·:ô9âÖ˜Ğ*°`cõç?ÿ ès¥Ÿ²Piki;öÃ±†- 0pÍmPcÜ³Cd±Ó;=£¥£exdÃc	VA¬”˜Ÿ9b›Á„¾ÀP˜æ¬i§×P«Åf,ñÀíüá`ûúÉ Oô¿ûî»7Şx,p oŞ|š­Ó¾İû><úáÜÍµqz¶™˜»Hâ`fm[ÖÖ¾¼}l|LÃblŒ
+qñâ öq—aÃpğ;Ë*&I‚–€XJ€>nÇb@ßqOèCĞ›¸‚5>çoûNßû>)4­Ó‹/¼øÖ½=wË„‚v¿@“°R8T>‚²,êã†ª[š[:Wub ¦ƒcHÊ]¾|š)¡¹w$èÍ
+FQã„Ö¾i(§zM,™pú¯½öš£Ÿ{|Ç=Ü¾}ûí·ß~÷İwi6íô¾â¬‘şé÷ÿôö½}wônİÆTÁÕ!i“Pk8ªE¢Ü”>>1ŞÖÚÆFot,ØÀ»»‡«W¯1%°‡H6)l›Í8 -t§(ïîKc ¶—/¾ø" Ît;hÁ§ûL¼ùæ›t14ècÃóÏ?ß{¢—#¶ù¶¦6cã ÒÚÜŠ„ù,óÑ–·/§ß`rĞ‡+ˆíØ•+CŒ¶f¡ïCÁØtÖŠ×*[Ll	Işâ¿xòÉ'}ïA•^oı¥éûü1Ğ'ô]eöD€6\ói…º¿şŸ².9Ÿ³ğ°íÀ–+ñû
+¬Ä°Šß|ó5¹¼eª3Ñ÷i ^óÆaO¼—ë½ ÏÃñN¾ÃÍ•€fN€ş;ï¼óÁĞÅp8´Ê×<´È³?öè;Ggo®¸Ä0Í¢}‘½¾$Ç"ŒÅö¶v†¯kë6@7;¹âû€4Ì°K#–§L	3¥-(åà³nr;®ıÌîâ8}¶ZîpxœBÃhfæí÷ß~Ÿ1± ½Ë¶hT°j³|¨Áàª{M·ÏÃ0¢¡w|Ñwß}Ë‘x¾4°–2÷4ß¼y›§‚ç•¼xpºğÛßşô	º_½ZT„àJó>ıôSGŸ&á‘‘5»Vã”xøÆğ\¿JòÂ¸ˆçtä˜×e8®¸råJ×ê.Œ+¼ÇpeÃŒ…Ì¨-™\}\¿~‹MÜ¼ª©Ç´H ğo~ó Ï<èíÁ+‚†àHù­·ŞJ^•†ZkÓóÛÏùÙ»o½ëœ0—ñ¬§o‘&ÜõHQ³¸¢Â:EÉFÔÄ˜ˆô !¶i>4yjpêÔIÆ®kóeºİ•+7nŞ\äÃµEà•W^ñ§÷ú ¼É—/ıå/ti	®ŸNäm€‡•ÏçŸ|NÿJíiDÔëÚš„o#Ù¥ôÛ#·±éŠå+RŸ`ğüñH'Oà©rfµè‡œï•Í;²pVãùú½Ôè×èMìu/^ÔÊ¥é>¹£gş`¼ûõ·IÕyuÿ y°t*;ÕÄfE¾šY»qıƒÀ¸ÒcâŒÕÄƒ3²ñ¢”²–Jxh>İ¨¯ï‚D,0,Ø  ÷Øc%¿ïÕS©)¤»ÿ¡Ğÿ÷›½½§ÌÙ úÛ·uÌéFãßıî÷ï½ıÅ¨pb¯Óû‘–‚©¢˜Ã®ªı?4°à‚œßi|¨q@²fux ›–¦>Ş˜Àh^Š+•Ğ"Œbl)y^Ä‚ğÌÓO»ëwÕÕÂ½zÍ·ß~Ëƒtòéøæ…
+{zzn^¿qùÒåXv¶»ƒRáH²<—Š`°ö˜—¨¬KòSqpšÑ,Î¦²‰oºiìîëf¦¨X)[ÈqfZIkÒP81Îã“Á¹sçc‘ùŞf ö\]İZ«¤½-¡×S¥âÜèA¬úYÀAè£.´w:ËË/¿üÎ›ï83éó	uËàĞ<lZÄ‹1BÃãI²í“¶èw,†ŞÖ“¬
+hv+;P	Ö&6É²Šä×V˜9Õ 	™y±¯o Hšµ °ît×_(-Õˆğò„Ê¡§°ì
+½›e'ş'j"}÷îİ7xáÒõ«×c¢îÊÈ“²ê¥¥ÌH ']?H[	ç\çF†ÉMâ%x¼ƒxr æY€Çw(JUçÎõÉÀô<@À„áÎ6Ö<Ç} ûã|¼%åkèn$¢Ù±cÇ8j† fºLy}ÆKœ­/<ÿÂ{ï¼}Àúf)ÀÌp¥]uB—Ğ§E62%¬£€DD1áîãc|t%91õTª 9ØÀ£¼<ÑßßÇ°0åĞáÌ™¾ŠÀY¢ó5 gmùÄ›Ü}´„ÚN»/½ÿş{öf‡¢·n3ƒyõŞêC‡8?Àë=UŠ&9õÒêŒÇË€uC9–O©…èº”ñfká5ÎDW¯¢‰ÅE:~àıÔÁÁ‹ş¶]b€™sìS§Î¦”Ù‰y€ç$œùTº?æf€F¹?ü€W,Koò~GªV°wî¹ç>8ú÷¬EÊ@%ŞDÄœâ)•ÊèØ©MZ‘>3šDÏML7ñÖ)oTğè&g¦{i®W%ÓW¯^ÁÇšíu6úâÈşÛy©Fô¼Àë!9ú¯]eşO1rl‚–.ÓÌ½¥}#ïØÑƒë¿VöşQ³j’32*%•ˆ`	I¡(œ’Dä6Ë3ê¤›„0wòêJ!ïJW“4,49uùò%Ûß„*QóáÀÀ¥¼ŠFôÜğîŸ­|’—õ¹Wè#ÉçèÑ÷™—¼&^ªaéŸ×
+×/¼ğÁûdm‰ùõñª¦V`ÂÆ±¼İ-&,¹ˆd‰^ªnñ\ —Å¼NÁC›<Ä}’Ã
+8¢7|‡ŸX8ddÊ¡„@ÊÎ‰¹Àû9Şı+]^À[@
+±ğ?{öŒ·Š+j:XmÚ´™CÿsgÏæÕCÏ@FùEb¤â½R:D ëç+uq<2ÀÈH¶'0Qz„©Ù˜vÑL­¹ÑÑáâÅ¹Áà¶¾(ó3ŞåuGÕP'{“ÿùŸÓ
+mØ[ÛÏ~öóO?ş´ÒkU¾~(
+ÆürJ9æÄYzÉ]ZSÁkâ^J´×ë*6Àå¬„'óøŒhŞ:šó&£`A0‡xy/y÷õ}p>B÷ç©{“Ô6º¿šjñ|u÷®]ß|õõ|üOV2ˆ(ÁÅ÷¢@‘¶0ª"¡eĞÃxp‘ÄbB_ƒèñx]&çrÃ§‡R‘ºÄlàå6_,«h#$Äºv°®C·/¾ø<-7Y$Ü¹£÷«²ú¦9÷çE+›¬²äBÙr‹İx1-Ş³‚2H)9D³´‚Á‹h&¦BÖåI‰œÿğà/:´İ—¤Ø€ójöÆ¤Uê{°Ÿ}_6›vîÜisoÀÚ ØYj ÓãÇÀ	úèãZéşŞÈ§Ÿ~æÓ?Ávy›…Lü?¥+¡Êi‚ÄŠy•’‘Pª–¬ÏAœ»¤UAÇÊ¼ùO]
+]Xsã{íªqÅ/Í>f3 ëQ»¢v§¨Šeov¦ÇrxÃŠ×ƒgÓ¦M-µæşsı™íÂ*>ÖØâB¶EªlOØ%"ñ)AX!FğTB…G…O"ä|¦ôÎ„oŒ“úxœ	Â °™ U¡CA¥Â<ÚĞ >ú(ŞßY;b§.ÑG¡‰üã~âO:jñ¼‚{âöÄÿşxjŒËŒ×¤kLÈî™,Å°™­¼•Š*Ñª°<Ş˜F¾5¼bå
+›	¤íÅœì7U§Ei~äÄ€._¾ÚHvC0ÄÅú~²y&h·øÙgŸÚ®Ä5àgˆ<ï-ü¥ÚÚ–>|ä“>.¥Kßğ¨KõKJ/ˆY°TI—hb¼LF†„™Í¨ğHJ–”‘$Ó»q	œô*é¸WÁS pDÌÂ^«Pñ
+Îì×†`Ê¬›÷å¼4/xsÂ­©2¶^¨ÇJè ,ÿÙÈ°Š(Ò)œ7¬"7fÙ=FŒgfJ*ZBÍSwIBâ‡È‹ätâI‰‰ —›­G%¨m&€V”Q0qXœ˜ÅÕ7ÀV{·ÙUÉmàB­VÈ©¯¿şÊŸ¶£ìıÈrşĞš¦ÙÇõÏÅT°ø_d
+)¥¤¬@Ä’Õtâ^N8E	ñ3'å‹Ä
+[.!‰-¸Ú5à¿mŠT¶†€À 
+«A_:ô~%{hˆ#²:¡¾p>æ(û“ ¯°Ÿš¢S÷ööB¸TÌn¿é‘³ŠÊM3`™ ¾:ö¥w¥KF¥İY<æØ=F¬Dñ
+%&42ót/ì‘§gåtb¬&¦êÍY'+’íÂ¬áZ˜øs|é`m%0KÂs¢¾xI?ïøQP(ˆPüO_ß9;øzàıIO~ÆŠ4±˜Ÿ°=ZšE’Ş¹bO0V9BN)Ù[J)ÄYr!Î2ˆÀRO×Ÿ	Œd’ã°°ïáh¨<Ğ5=¸t g'4>®‡Æ^©—.])4Ì¨úHë8Í°Q3)hì~Ù†¸ÍI±Ç^š®M8üúëéÙyæôY×#¦g•I©™)7«QiE´‰%rX+â2
+n§*œ³$z^ˆ3jMÅaèK1@ ‹ÇõzĞ°^IK²ËI×:ÀÇÙòßy\Dh¿CsëøYOm³f·îg`¦<¿ üöë¯™LV‘ª·¤Rz5¥”©r¡’EëbšÕX°œ¢ŠôœLUºo2hâ¢¶tÊb R8³µPØnÓu×Bu C½RhU£—[›]1 èó Â+ƒÏ¼?÷Ò„Á»İ|·¡¯¯ßRMœD¡HŠ”İcÆ€J–¢Ò)5¤›b&V9æ ¿eÇÜ*‹g†k.!Ñ‰p&Îyşn‚¢¬ù}ªSxVç>32¾H)
+UÇ Ñ¶ríCùüvòä	¯ÏMâÇ•	€/1ğåÿ®C¥V
